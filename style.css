@@ -1,0 +1,440 @@
+*{
+	margin: 0;
+}
+header{
+	min-height: 100vh;
+	/*background-color: #fbe3e7;*/
+}
+.container{
+	max-width: 90%;
+	margin: auto;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	/*background-color: blue;*/
+}
+.logo{
+	/*background-color: green;*/
+	padding: 4vh 0; 
+}
+.logo h3{
+	font-size: 20px;
+	font-family: sans-serif;
+	font-weight: 900;
+	padding: .3vh .5vw;
+	border-right: 8px solid #5bc6f6;
+	border-left: 8px solid #5bc6f6;
+	border-top: 1px solid #5bc6f6;
+	border-bottom: 1px solid #5bc6f6;
+
+}
+span{
+	color: #5bc6f6;
+	font-size: 20px;
+
+}
+.navbar{
+	padding: 5vh 0;
+	display: none;
+}
+ul{
+	display: flex;
+	padding: .4vh .5vw;
+}
+ul li{
+	list-style: none;
+	padding-left: 1.6vw;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+a:hover{
+	color: #5bc6f6;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+@media(max-width: 800px)
+{
+	nav{
+		display: flex;
+		flex-direction: column;
+	}
+	.logo{
+		text-align: center;
+	}
+	ul li{
+		display: none;
+	}
+	
+}
+
+/*------ article -------------*/
+article{
+	padding: 12vh 0;
+
+}
+.split{
+	display: flex;
+}
+.split > * + * {
+	margin-left: 5vw;
+}
+.text{
+	padding-top: 5vh;
+}
+.text h1{
+	font-size: 53px;
+	font-family: sans-serif;
+	padding-top: 2vh;
+	padding-bottom: 5vh;
+}
+.text p{
+	font-family: sans-serif;
+	padding-right: 1.5vw;
+	padding-bottom: 9vh;
+	line-height: 1.4;
+	color: #887b7b;
+}
+.text a{
+	font-family: sans-serif;
+	font-size: 18px;
+	color: #fff;
+	padding: 12px 17px;
+	background-color: #5bc6f6;
+	border-radius: 39px;
+}
+.text a:hover{
+	transition: all 0.4s ease;
+	background-color: #f00;
+}
+
+
+.img{
+	/*background-color: green;*/
+}
+.img img{
+	width: 40vw;
+	height: 54vh;
+}
+@media(max-width: 800px)
+{
+	.split{
+		display: flex;
+		flex-direction: column;
+	}
+	.text{
+		padding-bottom: 10vh;
+		text-align: center;
+	}
+	
+	.img{
+		text-align: center;
+	}
+	.img img{
+		width: 50vw;
+	}
+}
+@media(max-width: 650px)
+{
+	.text h1{
+		font-size: 40px;
+	}
+	.text p{
+		font-size: 15px;
+	}
+}
+
+/*---------------------------------- section 1 styling ------------------------*/
+section{
+	min-height: 100vh;
+}
+.photos{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 18vh 5vw;
+
+}
+.photos img{
+	width: 24vw;
+}
+@media(max-width: 760px)
+{
+	.photos{
+		display: flex;
+		flex-direction: column;
+	}
+	.photos img{
+		width: 50vw;
+	}
+}
+
+/*---------------------------------- section 2 styling ------------------------*/
+.product{
+	min-height: 100vh;
+	/*background-color: pink;*/
+}
+.head{
+	text-align: center;
+	padding: 10vh 0;
+}
+
+.head h2{
+	font-size: 32px;
+	color: grey;
+	font-family: sans-serif;
+	position: relative;
+}
+
+.head span{
+	color: #5bc6f6;
+	font-size: 32px;
+}
+.product .splite{
+	display: flex;
+	justify-content: space-around;
+}
+.splite img:hover{
+	transform: translateY(-12px);
+	transition: all 0.6s ease;
+	cursor: pointer;
+}
+.item img{
+	width: 18vw;
+	height: 55vh;
+}
+.item p{
+	line-height: 1.4;
+	font-family: sans-serif;
+	color: #887b7b;
+}
+@media(max-width: 800px)
+{
+	.item p{
+		font-size: 14px;
+	}
+}
+
+@media(max-width: 760px)
+{
+	.product .splite{
+		display: flex;
+		flex-direction: column;
+	}
+	.splite .item{
+		text-align: center;
+		padding-bottom: 10vh;
+	}
+	.splite .item img{
+		width: 50vw;
+		height: 75vh;
+	}
+}
+
+/*---------------------------------- section 3 styling ------------------------*/
+section{
+	min-height: 100vh;
+}
+.head{
+	text-align: center;
+	padding: 10vh 0;
+}
+.splate{
+	display: flex;
+	flex-direction: column;
+	padding-right: 5vw;
+	padding-left: 5vw;
+	padding-top: 3vh;
+	padding-bottom: 7vh;
+}
+.splate img:hover{
+	transform: translateY(-12px);
+	transition: all 0.9s ease;
+	cursor: pointer;
+}
+.splate .row{
+	display: flex;
+	justify-content: space-around;
+	padding: 3vh 0;
+
+}
+
+@media(max-width: 760px)
+{
+	.splate .row{
+		display: flex;
+		flex-direction: column;
+	}
+	.splate .item{
+		text-align: center;
+		padding-bottom: 10vh;
+	}
+	.splate .item img{
+		width: 50vw;
+		height: 75vh;
+	}
+}
+
+/*---------------------------------- section 4 styling ------------------------*/
+.band{
+	min-height: 75vh;
+	background-color: #fbf4e0;
+}
+.splatee{
+	display: flex;
+	padding: 20vh 5vw;
+}
+.splatee img{
+	padding-top: 10vh;
+	width: 40vw;
+	height: 40vh;
+}
+.splatee > * + *{
+	margin-left: 4vw;
+}
+@media(max-width: 760px)
+{
+	.splatee{
+		display: flex;
+		flex-direction: column;
+	}
+	.splatee .img{
+		padding-bottom: 15vh;
+	}
+}
+
+/*---------------------------------- section 5 styling ------------------------*/
+.splat{
+	display: flex;
+	justify-content: space-between;
+	padding: 12vh 5vw;
+}
+.splat > * + *{
+	margin-left: 2vw;
+}
+.itam{
+	text-align: center;
+	box-shadow: 0px 0px 9px 0px;
+}
+.itam:hover{
+	transform: translateY(-15px);
+	transition: all 0.5s ease;
+	cursor: pointer;
+}
+.itam p{
+	padding: 10px;
+	font-size: 16px;
+	padding: 6vh 3vw;
+}
+.itam img{
+	height: 25%;
+	width: 35%;
+	border-radius: 100%;
+}
+.itam h3{
+	padding-bottom: 5vh ;
+}
+@media(max-width: 760px)
+{
+	.splat{
+		display: flex;
+		flex-direction: column;
+		margin: 12vh 5vw;
+	}
+	.splat > * + *{
+		margin-left: 0vw;
+	}
+	.splat .itam{
+		margin-bottom: 10vh;
+		padding: 0vh 5vw;
+	}
+}
+
+
+/*---------------------------------- footer styling ------------------------*/
+footer{
+	min-height: 50vh;
+	background-color: #111;
+	color: #fff;
+}
+.spliit{
+	display: flex;
+	justify-content: space-around;
+	padding: 10vh 2vw;
+}
+.spliit > * + * {
+	margin-left: 2vw;
+}
+.itame{
+	padding: 3vh 3vw;
+}
+.itame p{
+	text-align: center;
+	padding: 0vh 3vw;
+}
+.spliit .itame .per p{
+	color: #111;
+}
+.imgs{
+	display: flex;
+	justify-content: center;
+}
+.imgs img{
+	width: 7vw;
+	height: 7vh;
+	margin-right: 3px;
+}
+.texto{
+	padding-bottom: 3vh;
+}
+.texto h3{
+	padding-bottom: 2vh;
+	font-family: sans-serif;
+	text-align: center;
+}
+.imags{
+	text-align: center;
+}
+.imags img{
+	width: 7vw;
+	height: 8vh;
+	padding-bottom: 3vh;
+}
+.para{
+	padding-bottom: 20px;
+}
+.para h3 {
+	font-size: 22px;
+	font-family: sans-serif;
+	padding-bottom: 4vh;
+	text-align: center;
+}
+.foot h4{
+	text-align: center;
+	padding-top: 7px;
+}
+
+@media(max-width: 760px)
+{
+	.spliit{
+		display: flex;
+		flex-direction: column;
+	}
+	.spliit > * + * {
+		margin-left: 0vw;
+	}
+	.imgs img{
+		height: 10vh;
+		width: 25vw;
+		padding-bottom: 5vh;
+	}
+	.imags img{
+		height: 10vh;
+		width: 30vw;
+	}
+	.para h3{
+		font-size: 25px;
+	}
+
+}
